@@ -9,11 +9,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           {/* http://localhost:3000/sunrisesAndSunsets */}
-          <Route path='/sunrisesAndSunsets' element = {<ListSunriseAndSunsetComponent/>}></Route>
+          <Route path='/' element = {<ListSunriseAndSunsetComponent/>}></Route>
           {/* http://localhost:3000/sunrisesAndSunsets/add */}
-          <Route path='/sunrisesAndSunsets/add' element = {<AddSunriseAndSunsetComponent/>}></Route>          
+          <Route path='/add' element = {<AddSunriseAndSunsetComponent/>}></Route>          
           {/* http://localhost:3000/sunrisesAndSunsets/update/1/1 */}
-          <Route path='/sunrisesAndSunsets/update/:locationId/:dateId' element = {<AddSunriseAndSunsetComponent/>}></Route>          
+          <Route path='/update/:locationId/:dateId' element = {<AddSunriseAndSunsetComponent/>}></Route>          
         </Routes>
       </BrowserRouter>
     </>

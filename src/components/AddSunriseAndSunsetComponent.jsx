@@ -40,13 +40,13 @@ function AddSunriseAndSunsetComponent() {
                 console.log('update')
                 updateSunriseAndSunset(locationId, dateId, latitude, longitude, date).then(() => {
                     console.log('update executed')
-                    navigator('/sunrisesAndSunsets')
+                    navigator('/')
                 })
             } else {
                 console.log('save')
                 addSuntiseAndSunset(latitude, longitude, date).then(() => {
                     console.log('save executed')
-                    navigator('/sunrisesAndSunsets')
+                    navigator('/')
                 })
             }
 

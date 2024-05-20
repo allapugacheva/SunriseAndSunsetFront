@@ -25,11 +25,11 @@ function ListSunriseAndSunsetComponent() {
     }
 
     function addNewSun() {
-        navigator('/sunrisesAndSunsets/add');
+        navigator('/add');
     }
 
     function updateSun(locationId, dateId) {
-        navigator('/sunrisesAndSunsets/update/' + locationId + '/' + dateId);
+        navigator('/update/' + locationId + '/' + dateId);
     }
 
     function deleteSun(locationId, dateId) {
