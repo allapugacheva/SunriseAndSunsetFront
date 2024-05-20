@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const BASE_URL = 'http://localhost:8080/api/v1/suntime/sunriseandsunset'
+// const BASE_URL = 'http://localhost:8080/api/v1/suntime/sunriseandsunset'
+
+const BASE_URL = import.meta.env.VITE_API_URL;
 
 export const getAllSunrisesAndSunsets = () => axios.get(BASE_URL)
 
